@@ -6,6 +6,7 @@ import './styles/style.css'
 const a = 555
 
 
+
 function component() {
   const element = document.createElement('h1')
 
