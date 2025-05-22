@@ -4,7 +4,7 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: "./src/index.js",
+    app: "./src/app.js",
   },
   module: {
     rules: [
@@ -28,8 +28,17 @@ module.exports = {
       title: "Simple Calculator",
     }),
     new ESLintPlugin({
-      fix: true,
       extensions: [".js"],
+      exclude: 'node_modules',
+      emitError: true,
+      emitWarning: true,
+      failOnError: false,
+      failOnWarning: false,
     }),
   ],
+  resolve: {
+    alias: {
+      utils: path.resolve(__dirname, 'src/utils/'),
+    },
+  },
 };
