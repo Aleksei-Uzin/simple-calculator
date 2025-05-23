@@ -19,7 +19,7 @@ h1 {
   display: grid;
   border: 1px solid black;
   grid-template-columns: repeat(4, min-content);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, min-content);
   gap: 8px 8px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -38,13 +38,30 @@ h1 {
 .display {
   grid-area: display;
   display: flex;
+  align-items: stretch;
+  flex-direction: column;
   justify-content: end;
-  align-items: end;
+  text-align: end;
   font-size: 34px;
   line-height: 34px;
   padding: 4px 6px;
   border: 1px solid black;
   border-radius: 8px;
+}
+
+.display-main-row {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.display-second-row {
+  max-width: 210px;
+  min-height: 14px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: end;
+  text-wrap: nowrap;
+  overflow-x: hidden;
 }
 
 .utility-panel {
