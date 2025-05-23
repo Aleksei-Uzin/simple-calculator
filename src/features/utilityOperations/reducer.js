@@ -1,5 +1,6 @@
 import handleResetValue from './handleResetValue.js'
 import handleChangeSign from './handleChangeSign.js'
+import handlePercentage from './handlePercentage.js'
 
 export default function reducer(operation) {
   switch (operation) {
@@ -10,6 +11,7 @@ export default function reducer(operation) {
       handleChangeSign()
       break
     case 'mod':
+      handlePercentage()
   }
 }
 
