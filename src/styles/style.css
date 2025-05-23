@@ -100,7 +100,7 @@ button {
   border-radius: 8px;
 }
 
-button[data-value="0"] {
+button[data-value='0'] {
   width: 108px;
 }
 
