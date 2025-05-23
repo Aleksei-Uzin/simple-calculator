@@ -4,7 +4,7 @@ export default function constructNumber(numb) {
   const { currentValue, update } = handleCurrentValue()
   let newValue = ''
 
-  if(currentValue.length === 10) {
+  if (currentValue.length === 10) {
     return
   }
 
