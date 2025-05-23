@@ -5,7 +5,7 @@ export const BUTTONS = [
   },
   {
     name: '+/-',
-    value: 'change-sign',
+    value: 'sign',
   },
   {
     name: '%',
