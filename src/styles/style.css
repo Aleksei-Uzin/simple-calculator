@@ -6,8 +6,11 @@
 }
 
 body {
-  max-width: 100vw;
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
   font-family: 'IBMPlexMono-Regular', monospace;
 }
 
@@ -95,4 +98,9 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 14px;
 }
