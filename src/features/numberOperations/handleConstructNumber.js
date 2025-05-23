@@ -1,6 +1,6 @@
 import handleCurrentValue from '../handleCurrentValue.js'
 
-export default function constructNumber(numb) {
+export default function handleConstructNumber(numb) {
   const { currentValue, update } = handleCurrentValue()
   let newValue = ''
 

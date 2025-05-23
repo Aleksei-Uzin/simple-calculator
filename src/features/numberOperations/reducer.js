@@ -1,11 +1,11 @@
-import constructNumber from './constructNumber.js'
-import constructFloatNumber from './constructFloatNumber.js'
+import handleConstructNumber from './handleConstructNumber.js'
+import handleConstructFloatNumber from './handleConstructFloatNumber.js'
 
 export default function reducer(operation) {
   if (/^[0-9]$/.test(operation)) {
-    constructNumber(operation)
+    handleConstructNumber(operation)
   } else if (operation === 'period') {
-    constructFloatNumber()
+    handleConstructFloatNumber()
   }
 }
 

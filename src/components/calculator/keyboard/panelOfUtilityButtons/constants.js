@@ -8,7 +8,7 @@ export const BUTTONS = [
     value: 'sign',
   },
   {
-    name: 'Mod',
+    name: '%',
     value: 'mod',
   },
 ]

@@ -1,17 +1,15 @@
-import resetValue from './resetValue'
-import changeSign from './changeSign'
-import handleMathOperation from '../handleMathOperation'
+import handleResetValue from './handleResetValue.js'
+import handleChangeSign from './handleChangeSign.js'
 
 export default function reducer(operation) {
   switch (operation) {
     case 'reset':
-      resetValue()
+      handleResetValue()
       break
     case 'sign':
-      changeSign()
+      handleChangeSign()
       break
     case 'mod':
-      handleMathOperation('%')
   }
 }
 

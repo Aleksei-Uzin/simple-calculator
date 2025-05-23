@@ -1,5 +1,5 @@
-import calcResult from './calcResult.js'
-import handleMathOperation from '../handleMathOperation.js'
+import handleCalcResult from './handleCalcResult.js'
+import handleMathOperation from './handleMathOperation.js'
 
 export default function reducer(operation) {
   switch (operation) {
@@ -16,7 +16,7 @@ export default function reducer(operation) {
       handleMathOperation('+')
       break
     case 'result':
-      calcResult()
+      handleCalcResult()
   }
 }
 

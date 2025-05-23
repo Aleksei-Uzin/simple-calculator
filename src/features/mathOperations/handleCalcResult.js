@@ -3,7 +3,7 @@ import handleLocalStorage from '../../utils/handleLocalStorage.js'
 import handleMathOperationsRow from '../handleMathOperationsRow.js'
 import calc from './utils/calc.js'
 
-export default function calcResult() {
+export default function handleCalcResult() {
   const { currentValue, update } = handleCurrentValue()
   const { getStorage, cleareStorage, updateStorage } = handleLocalStorage()
   const { updateMathRow } = handleMathOperationsRow()

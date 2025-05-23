@@ -1,6 +1,6 @@
 import handleCurrentValue from '../handleCurrentValue.js'
 
-export default function changeSign() {
+export default function handleChangeSign() {
   const { currentValue, update } = handleCurrentValue()
   let newValue = ''
 
