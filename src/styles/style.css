@@ -37,6 +37,12 @@ h1 {
 
 .display {
   grid-area: display;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 34px;
+  line-height: 34px;
+  padding: 4px 6px;
   border: 1px solid black;
   border-radius: 8px;
 }
