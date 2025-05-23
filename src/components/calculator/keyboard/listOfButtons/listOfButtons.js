@@ -3,7 +3,7 @@ import { getButton } from '../button'
 
 export function getListOfButtons(buttonsArr = [], listProps = {}) {
   const buttons = buttonsArr.map(({ name, value }) => {
-    const button = getButton(name, { 'data-value': value })
+    const button = getButton(name, { 'data-value': value, id: value })
     const li = createElement('li', {}, button)
 
     return li
