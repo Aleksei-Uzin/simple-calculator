@@ -3,8 +3,8 @@ export default function handleLocalStorage() {
 
   const getStorage = () => {
     const valueInLocalStorage = window.localStorage.getItem(key)
-    
-    if(valueInLocalStorage) {
+
+    if (valueInLocalStorage) {
       return JSON.parse(valueInLocalStorage)
     } else {
       return []
